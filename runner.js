@@ -1423,13 +1423,14 @@ Runner.prototype = {
    * Pause the game if the tab is not in focus.
    */
   onVisibilityChange(e) {
-    if (document.hidden || document.webkitHidden || e.type === 'blur' ||
-        document.visibilityState !== 'visible') {
-      this.stop();
-    } else if (!this.crashed) {
-      this.tRex.reset();
-      this.play();
-    }
+    console.log("onVisibilityChange: do nothing");
+    // if (document.hidden || document.webkitHidden || e.type === 'blur' ||
+    //     document.visibilityState !== 'visible') {
+    //   this.stop();
+    // } else if (!this.crashed) {
+    //   this.tRex.reset();
+    //   this.play();
+    // }
   },
 
   /**
